@@ -79,7 +79,7 @@ ad_proc -private ad_user_class_query { set_id  } {
 		    
 		}
 		"intranet_user_p" {
-		    if {$intranet_user_p eq "t" && [lsearch $tables "intranet_users"] == -1 } {
+		    if {$intranet_user_p == "t" && [lsearch $tables "intranet_users"] == -1 } {
 			lappend tables "intranet_users"
 			lappend join_clauses "users.user_id = intranet_users.user_id"
 		    }
