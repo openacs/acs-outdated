@@ -111,7 +111,7 @@ ad_proc -private lc_monetary {
         set sign [lc_get -locale $locale "positive_sign"]
     } 
     
-    # decimal seperator
+    # decimal separator
     set dec [lc_get -locale $locale "mon_decimal_point"]
     regsub {\.} $out $dec out
 
