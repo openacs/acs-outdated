@@ -13,7 +13,7 @@ ad_proc -private ad_user_class_query { set_id  } {
     set having_clauses [list]
     set tables [list users]
 
-    # turn all the parameters in the ns_set into tcl vars
+    # turn all the parameters in the ns_set into Tcl vars
     ad_ns_set_to_tcl_vars -duplicates fail $set_id 
 
     # if we are using a user_class, just get the info
