@@ -110,7 +110,7 @@ ad_proc -private ad_user_class_query { set_id  } {
 			    lappend join_clauses "users.user_id = users_charges.user_id"
 			}
 
-			set group_clauses [concat $group_clauses $user_columns]
+			lappend group_clauses {*}$user_columns
 
 			lappend having_clauses "sum(users_charges.amount) > [parameter::get -parameter ExpensiveThreshold]"
 			# only the ones where they haven't paid
