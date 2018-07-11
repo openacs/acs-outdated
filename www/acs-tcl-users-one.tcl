@@ -59,7 +59,7 @@
 
 #  # randyg is brilliant! we can recycle the same handle here because the
 #  # inner argument is evaluated before the outer one. this should actually
-#  # be done with the db api. 12 june 00, richardl@arsdigita.com
+#  # be done with the db API. 12 june 00, richardl@arsdigita.com
 
 #  if { [im_enabled_p] && [ad_user_group_member $db [im_employee_group_id] $user_id] } {
 #      # We are running an intranet enabled acs and this user is a member of the 
