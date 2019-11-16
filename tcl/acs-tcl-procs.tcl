@@ -4,7 +4,7 @@ ad_proc -public -deprecated lmap {list proc_name} {
 } {
     set lmap [list]
     foreach item $list {
-        lappend lmap [safe_eval $proc_name $item]
+        lappend lmap [ad_safe_eval $proc_name $item]
     }
     return $lmap
 }
