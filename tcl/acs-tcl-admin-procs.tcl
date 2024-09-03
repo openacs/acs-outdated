@@ -2,7 +2,7 @@
 ad_proc -private ad_user_class_query { set_id  } {
     Takes an ns_set of key/value pairs and produces a query for the class of users specified (one user per row returned).
 
-    @param set_id The id of a ns_set containing all the parameters of the user class.
+    @param set_id The id of an ns_set containing all the parameters of the user class.
     
 
 } {
